@@ -1,0 +1,16 @@
+{
+  "name": "m365qualityoflife",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "cpass": "2.2.0",
+    "node-sp-auth": "^3.0.3",
+    "playwright": "^1.10.0",
+    "playwright-chromium": "^1.10.0"
+  },
+  "devDependencies": {}
+}
