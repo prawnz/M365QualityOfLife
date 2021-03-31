@@ -1,7 +1,6 @@
 // Global
 const { chromium } = require("playwright-chromium");
 const spauth = require("node-sp-auth");
-const Cpass = require('cpass').Cpass;
 
 module.exports = async function (context, req) {
     context.log('JavaScript HTTP trigger beginning Update-DocSetWelcomePageView request.');
@@ -15,12 +14,10 @@ module.exports = async function (context, req) {
     // Doc Set Setting page to go to     
     const pageUrl = `https://${process.env.TenantName}.sharepoint.com/sites/${groupAlias}/_layouts/15/docsetsettings.aspx?ctype=${contentTypeID}&List=${listID}`;
     
-
     // Authentication setup
-    const cpass = new Cpass();
     const authObject = await spauth.getAuth(pageUrl, {
-        username: cpass.decode(process.env.SPAdminUsername),
-        password: cpass.decode(process.env.SPAdminPassword)
+        username: process.env.SPAdminUsername,
+        password: process.env.SPAdminPassword
     });
 
     // Do the magic
