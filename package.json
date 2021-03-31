@@ -7,9 +7,17 @@
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
+    "@pnp/common": "^2.3.0",
+    "@pnp/common-commonjs": "^2.3.0",
+    "@pnp/logging": "^2.3.0",
+    "@pnp/odata": "^2.3.0",
+    "@pnp/odata-commonjs": "^2.3.0",
+    "@pnp/sp": "^2.3.0",
+    "@pnp/sp-commonjs": "^2.3.0",
     "node-sp-auth": "^3.0.3",
     "playwright": "^1.10.0",
-    "playwright-chromium": "^1.10.0"
+    "playwright-chromium": "^1.10.0",
+    "pnp-auth": "^2.0.0"
   },
   "devDependencies": {}
 }

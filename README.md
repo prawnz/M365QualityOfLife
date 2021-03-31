@@ -15,9 +15,9 @@
 2. https://dotnetthoughts.net/running-playwright-on-azure-functions/
 
 ## TODO
-1. Use PNPJS to get the Content Type and List ID based on the title. 
+1. Link with KeyVault
 
 ## Deployment
-1. Create Linux Consumption Function App that is a 
+1. Create Linux NodeJs Azure Function App that is a running on an app service plan.
 2. func azure functionapp publish <Function App Name> --build remote
-3. Using kudu run npm install
+3. Using kudu run npm install and npm install playwright-chromium
